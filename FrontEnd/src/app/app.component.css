@@ -1,0 +1,10 @@
+
+body {
+  /* Apply the Roboto font */
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 64px; /* Adjust based on the navbar height */
+}

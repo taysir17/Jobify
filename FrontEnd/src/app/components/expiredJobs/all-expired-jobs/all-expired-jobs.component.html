@@ -1,0 +1,42 @@
+<div class="min-h-screen grid grid-cols-1 lg:grid-cols-9 bg-blue-200 p-4 gap-6">
+  <div class="col-span-1 lg:col-span-2">
+    <div class="w-full lg:w-fit bg-white h-auto lg:h-96 shadow-lg rounded-xl p-4">
+      <h1 class="text-4xl font-bold text-MainDark">Filters</h1>
+      <div class="flex flex-col my-2">
+        <label for="name" class="text-xl text-MainDark font-semibold my-2">Job Name</label>
+        <input name="name" type="text" placeholder="Enter job name..." class="border-b-2 border-MainShade bg-transparent text-MainDark placeholder:text-MainShade py text-lg" [(ngModel)]="filters.name" (input)="applyFilters()">
+      </div>
+      <div class="flex flex-col my-2">
+        <label for="location" class="text-xl text-MainDark font-semibold my-2">Location</label>
+        <input name="location" type="text" placeholder="Enter a location..." class="border-b-2 border-MainShade bg-transparent text-MainDark placeholder:text-MainShade py text-lg" [(ngModel)]="filters.location" (input)="applyFilters()">
+      </div>
+      <div class="flex flex-col w-full my-2">
+        <label for="salary" class="text-lg text-MainDark font-semibold my-2"
+          >Salary</label
+        >
+        <div class="flex w-full items-center">
+          <p class="text-MainShade">100 DT</p>
+          <input
+            name="salary"
+            type="range"
+            min="100"
+            max="10000"
+            step="100"
+            class="mx-2"
+            [(ngModel)]="filters.salary"
+            (input)="applyFilters()"
+          />
+          <p class="text-MainShade">10000 DT</p>
+        </div>
+        <p class="text-MainDark font-semibold mt-2">
+          Selected Salary: {{ filters.salary }} DT
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-span-1 lg:col-span-7 grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <ng-container *ngFor="let job of filteredJobOffers">
+      <app-exp-job-div [jobOffer]="job"></app-exp-job-div>
+    </ng-container>
+  </div>
+</div>

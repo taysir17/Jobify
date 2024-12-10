@@ -1,0 +1,15 @@
+<div class="container mx-auto p-4 flex flex-col lg:flex-row">
+  <div class="w-full">
+    <h1 class="text-5xl font-bold pb-6 mb-8 text-MainDark text-center border-b-2 border-MainDark">Recommended Candidates</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
+      <div *ngFor="let candidate of recommendedCandidates" class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center">
+        <i class="fas fa-user-circle text-4xl mb-2"></i>
+        <h2 class="text-3xl font-semibold capitalize text-MainDark">{{ candidate.name }}</h2>
+        <p class="text-gray-700 my-4">{{ candidate.email }}</p>
+        <button class="mt-2 bg-white hover:bg-MainDark transition border-2 border-MainDark text-MainDark hover:text-white px-4 py-2 rounded-full" (click)="showCandidateDetails(candidate)">
+          <i class="fas fa-info-circle mr-2"></i>View Details
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.max-h-32 {
+  max-height: 8rem; /* Adjust the height as needed */
+}
+
+.matches-container {
+  @apply max-w-4xl mx-auto text-left font-sans ;
+}
+
+.matches-container h2 {
+  @apply text-2xl mb-4 text-blue-900;
+}
+
+.matches-container p {
+  @apply text-sm text-gray-600;
+}
+
+.offers-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6;
+}
