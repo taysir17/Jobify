@@ -95,7 +95,7 @@ Here's a preview of the app with screenshots for key interfaces:
 
 ### **Recruiter Interface**
 - Manage job postings: add, modify, or delete.
-![Manage Job Postings](screenshots/jobOfferCrud.png)
+![Manage Job Postings](screenshots/JobOfferCrud.png)
 
 - Notifications for candidate applications.
 ![Recruiter Notifications](screenshots/Notifications.png)
