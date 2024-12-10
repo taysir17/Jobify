@@ -4,7 +4,7 @@
 
 ## **🚀 Project Overview**
 
-Welcome to **Jobify**, a platform designed to streamline the recruitment process by automatically matching candidates' skills with job descriptions. Using AI-powered matching algorithms, it simplifies the job application process for candidates and provides recruiters with more effective candidate recommendations. The goal is to create an efficient, user-friendly recruitment solution for both job seekers and employers.
+Welcome to **Jobify**, a platform designed to streamline the recruitment process by automatically matching candidates' skills with job descriptions. Using matching algorithms, it simplifies the job application process for candidates and provides recruiters with more effective candidate recommendations. The goal is to create an efficient, user-friendly recruitment solution for both job seekers and employers.
 
 ---
 
@@ -12,7 +12,7 @@ Welcome to **Jobify**, a platform designed to streamline the recruitment process
 
 ### **For Recruiters**
 - **Job Post Management**: Add, modify, and delete job offers with specific requirements.
-- **Candidate Recommendations**: Receive AI-driven recommendations for candidates with transferable skills.
+- **Candidate Recommendations**: Receive recommendations for candidates with transferable skills.
 - **Job Application Notifications**: Get notified when candidates match job requirements.
 - **Resume Feedback**: Receive insights on the candidates’ resumes and their matching scores.
 
@@ -30,7 +30,6 @@ Jobify uses modern technologies to ensure a seamless and scalable user experienc
 - **Frontend**: Angular, TypeScript, HTML5, CSS3, Bootstrap
 - **Backend**: Django (Python), REST APIs
 - **Database**: MySQL
-- **AI Integration**: Python-based AI model for job matching
 - **Authentication**: JSON Web Tokens (JWT)
 - **Deployment**: Nginx, Gunicorn, SSL for secure connections
 
@@ -43,7 +42,7 @@ Follow these simple steps to set up **Jobify** locally:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/jobify.git
+git clone https://github.com/taysir17/Jobify.git
 cd jobify
 ```
 
