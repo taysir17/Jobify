@@ -106,6 +106,9 @@ Here's a preview of the app with screenshots for key interfaces:
 - Submit resume for AI analysis.
 ![Resume Submission](screenshots/upload.png)
 
+### Test Audit
+![Test](screenshots/audit.jpg)
+
 ### 🎥 Video Demo
 
 Watch the full demo video [here](https://www.dropbox.com/scl/fi/iflbpdznupui19fz3mrcb/Demo-Jobify-Made-with-Clipchamp_1733850143846.mp4?rlkey=600z2uw4pqjpq4uulbtdr61ng&dl=0).
